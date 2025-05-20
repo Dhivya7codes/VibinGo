@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Dark Theme with Golden Primary & Teal Accent */
+    --background: 240 10% 3.9%; /* Very Dark Grey/Almost Black */
+    --foreground: 45 90% 75%; /* Light Golden for general text */
+
+    --card: 240 4.8% 10%; /* Darker Grey for Cards */
+    --card-foreground: 45 90% 75%; /* Light Golden text on cards */
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 45 90% 75%; /* Light Golden text on popovers */
+
+    --primary: 45 100% 50%; /* Vibrant Gold #FFBF00 */
+    --primary-foreground: 45 100% 10%; /* Dark brown/black for contrast on gold */
+
+    --secondary: 240 3.7% 15.9%; /* Lighter Grey */
+    --secondary-foreground: 0 0% 98%; /* Almost white, kept for secondary elements */
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 0 0% 62.8%; /* Lighter Grey for muted text */
+
+    --accent: 180 100% 25.1%; /* Teal #008080 - Kept as accent */
+    --accent-foreground: 0 0% 98%; /* White text for contrast on teal */
+
+    --destructive: 0 62.8% 30.6%; /* Darker Red */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%; /* Subtle Dark Border */
+    --input: 240 3.7% 15.9%;
+    --ring: 45 100% 50%; /* Vibrant Gold for focus rings */
+
+    --chart-1: 45 100% 50%;  /* Gold */
+    --chart-2: 180 100% 25.1%; /* Teal */
+    --chart-3: 45 90% 55%;   /* Lighter Gold */
+    --chart-4: 180 80% 30%;   /* Lighter Teal */
+    --chart-5: 45 80% 45%;   /* Darker Gold / different shade */
+    --radius: 0.5rem; /* Standard radius */
+
+    /* Sidebar variables (Golden primary) */
+    --sidebar-background: 240 8% 5%; /* Even darker for sidebar */
+    --sidebar-foreground: 45 90% 70%; /* Lighter golden for sidebar text */
+    --sidebar-primary: 45 100% 50%; /* Gold accent for sidebar */
+    --sidebar-primary-foreground: 45 100% 10%; /* Dark text for gold */
+    --sidebar-accent: 45 100% 50%; /* Gold */
+    --sidebar-accent-foreground: 45 100% 10%; /* Dark text for gold */
+    --sidebar-border: 240 4% 12%;
+    --sidebar-ring: 45 100% 50%; /* Gold for focus rings */
+  }
+
+  .dark {
+    /* Ensure dark theme variables are the same as root for consistency */
+    --background: 240 10% 3.9%;
+    --foreground: 45 90% 75%;
+    --card: 240 4.8% 10%;
+    --card-foreground: 45 90% 75%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 45 90% 75%;
+    --primary: 45 100% 50%;
+    --primary-foreground: 45 100% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 0 0% 62.8%;
+    --accent: 180 100% 25.1%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 45 100% 50%;
+    
+    --chart-1: 45 100% 50%;
+    --chart-2: 180 100% 25.1%;
+    --chart-3: 45 90% 55%;
+    --chart-4: 180 80% 30%;
+    --chart-5: 45 80% 45%;
+
+    --sidebar-background: 240 8% 5%;
+    --sidebar-foreground: 45 90% 70%;
+    --sidebar-primary: 45 100% 50%;
+    --sidebar-primary-foreground: 45 100% 10%;
+    --sidebar-accent: 45 100% 50%;
+    --sidebar-accent-foreground: 45 100% 10%;
+    --sidebar-border: 240 4% 12%;
+    --sidebar-ring: 45 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
